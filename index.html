@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* @media (max-width:1000px){
+        #container{
+            width:80%;
+        }
+    } */
+    
+</style>
+<link rel="stylesheet" href="index.css">
+<body>
+    <div style="height: 100vh; width: 100vw; display: flex; flex-direction: column; align-items: center; overflow: auto; background-color: antiquewhite; gap:2em">
+        <h1 style="margin-top:1em; font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: 600; color: brown;">Todo App</h1>
+        <div style="" id="container">
+            <div style="width: 100%; display: flex; justify-content: center; column-gap: 0.5em;">
+                <input type="text" style="outline: none; border: 2px solid black; border-radius: 1em; padding: 1em 0.8em; width: 65%;" placeholder="Enter Todo" id="todo-input"/>
+                <button style="padding: 0.3em 0.8em; border:2px solid chocolate; border-radius: 0.5em; outline: none; background-color:chocolate; color:white;cursor: pointer; font-size: 1.5em;" id="todo-add-btn">+</button>
+            </div>
+            <div style="width: 100%; display: flex; column-gap: 1em;">
+                <ul style="display: flex; flex-direction: column; row-gap: 1em; width: 100%; align-items: center; " id="todo-items">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
